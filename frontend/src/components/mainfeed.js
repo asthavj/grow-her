@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom'; // <-- ✅ Import useNavigate
 import '../styles/mainfeed.css';
 
 const users = [
@@ -19,12 +20,12 @@ const hardcodedPosts = [
 ];
 
 const MainFeed = () => {
+  const navigate = useNavigate(); // <-- ✅ Define navigate
   const [activeTab, setActiveTab] = useState('connected');
   const [posts, setPosts] = useState([]);
   const [postContent, setPostContent] = useState('');
   const [postImage, setPostImage] = useState(null);
 
-  // Load from localStorage + merge hardcodedPosts
   useEffect(() => {
     const storedPosts = JSON.parse(localStorage.getItem("posts")) || [];
     const merged = [...storedPosts];
@@ -89,11 +90,11 @@ const MainFeed = () => {
     })
     .sort((a, b) => (a.username === currentUser.username ? -1 : 1));
 
-    const handleLogout = () => {
-        // Perform logout actions here (clear tokens, etc.)
-        // Then redirect to login page
-        navigate('/login');
-      };
+  const handleLogout = () => {
+    // Example: clear localStorage or auth tokens
+    localStorage.clear();
+    navigate('/login'); // <-- ✅ Redirect
+  };
 
   return (
     <div>
@@ -108,6 +109,7 @@ const MainFeed = () => {
           <li><a href="/news">News</a></li>
           <li><a href="/profile">Profile</a></li>
           <li><a href="/forum">Forum</a></li>
+          <li><button onClick={handleLogout} style={{ background: "none", border: "none", color: "white", fontSize: "20px", cursor: "pointer", padding: "12px" }}>Logout</button></li>
         </ul>
       </div>
 
