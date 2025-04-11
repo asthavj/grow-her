@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .signup-page {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: 'Arial', sans-serif;
+    /*background-image: url("C:\Users\Astha\OneDrive\Desktop\my PHOTO.jpg"); Update path as needed*/
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1F2544; /* Dark blue for text */
+  }
+  
+  /* Container Styling */
+  .container {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  /* Title Styling */
+  h1 {
+    font-size: 2.5rem;
+    color: #00ACC1; /* Teal for the title */
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Subtitle Styling */
+  .subtitle {
+    font-size: 1rem;
+    color: #80CBC4; /* Soft green for subtitle */
+    margin-bottom: 2rem;
+  }
+  
+  /* Button Styling */
+  .btn {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    margin: 0.5rem 0;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .btn:hover {
+    transform: translateY(-2px);
+  }
+  
+  .btn:active {
+    transform: translateY(0);
+  }
+  
+  /* Investor Button */
+  .btn-investor {
+    background-color: #00ACC1; /* Teal */
+    color: white;
+  }
+  
+  .btn-investor:hover {
+    background-color: #0097A7; /* Darker teal */
+  }
+  
+  /* Business Button */
+  .btn-business {
+    background-color: #80CBC4; /* Soft green */
+    color: white;
+  }
+  
+  .btn-business:hover {
+    background-color: #4DB6AC; /* Darker green */
+  }
+  
+  /* Login Button */
+  .btn-login {
+    background-color: #E0F7FA; /* Light cyan */
+    color: #00ACC1; /* Teal text */
+  }
+  
+  .btn-login:hover {
+    background-color: #B2EBF2; /* Lighter cyan */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 480px) {
+    .container {
+      padding: 1.5rem;
+    }
+  
+    h1 {
+      font-size: 2rem;
+    }
+  
+    .subtitle {
+      font-size: 0.9rem;
+    }
+  
+    .btn {
+      font-size: 0.9rem;
+      padding: 0.6rem;
+    }
+  }

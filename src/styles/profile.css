@@ -1,0 +1,346 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    background-color: #E0F7FA;
+  }
+  
+  .profile-container {
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  /* Navigation Bar */
+  .nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #00ACC1;
+    color: white;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .nav-bar:hover {
+    overflow: auto;
+  }
+  
+  .logo h2 {
+    margin: 0;
+    font-size: 28px;
+    color: white;
+    padding: 0 20px 20px;
+    text-align: center;
+  }
+  
+  .nav-bar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+  
+  .nav-bar ul li {
+    padding: 0;
+    width: 100%;
+  }
+  
+  .nav-bar ul li a {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 15px 20px;
+    transition: background-color 0.3s ease, border-left 0.3s ease;
+  }
+  
+  .nav-bar ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-left: 4px solid #80DEEA;
+  }
+  
+  /* Logout Button Styles */
+  .logout-item {
+    margin-top: auto;
+    padding: 15px 20px;
+    width: 100%;
+  }
+  
+  .logout-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .logout-button:hover {
+    background-color: #d32f2f;
+  }
+  
+  /* Main Content */
+  .main-content {
+    margin-left: 250px;
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #E0F7FA;
+  }
+  
+  /* Header Section */
+  header {
+    position: relative;
+    height: 200px;
+    background: url('https://via.placeholder.com/1200x400') no-repeat center center/cover;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .header-background {
+    height: 100%;
+    background-color: rgba(0, 172, 193, 0.5);
+  }
+  
+  .profile-picture {
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #FFFFFF;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .profile-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Profile Details Section */
+  .profile-details {
+    text-align: center;
+    margin-top: 70px;
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile-details h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: #00ACC1;
+  }
+  
+  .profile-details p {
+    margin: 0.5rem 0;
+    color: #666;
+  }
+  
+  .profile-details button {
+    margin-top: 1rem;
+    padding: 10px 20px;
+    background-color: #00ACC1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .profile-details button:hover {
+    background-color: #80DEEA;
+  }
+  
+  /* Form Details Section */
+  .form-details {
+    margin: 2rem auto;
+    padding: 1.5rem;
+    max-width: 800px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-details h2 {
+    color: #00ACC1;
+    margin-top: 0;
+  }
+  
+  .details-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  
+  .details-grid div {
+    padding: 0.5rem;
+    border-bottom: 1px solid #E0F7FA;
+  }
+  
+  /* Profit Trends Section */
+  .profit-trends-section {
+    margin: 2rem auto;
+    padding: 1.5rem;
+    max-width: 800px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profit-trends-section h2 {
+    color: #00ACC1;
+    margin-top: 0;
+  }
+  
+  .chart-container {
+    position: relative;
+    height: 400px;
+    width: 100%;
+  }
+  
+  /* Posted Pictures Section */
+  .posted-pictures-section {
+    margin: 2rem auto;
+    padding: 1.5rem;
+    max-width: 800px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .posted-pictures-section h2 {
+    color: #00ACC1;
+    margin-top: 0;
+  }
+  
+  .picture-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+  
+  .picture-grid img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .picture-grid img:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Connections Modal */
+  .modal {
+    display: flex;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modal-content {
+    background-color: #FFFFFF;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 500px;
+    max-height: 80vh;
+    overflow-y: auto;
+    position: relative;
+  }
+  
+  .close {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #666;
+  }
+  
+  .close:hover {
+    color: #000;
+  }
+  
+  #search-connections {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #80CBC4;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  #connections-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #connections-list li {
+    padding: 1rem;
+    border-bottom: 1px solid #E0F7FA;
+    transition: background-color 0.3s ease;
+  }
+  
+  #connections-list li:hover {
+    background-color: #E0F7FA;
+  }
+  
+  .connection-role {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 0.25rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .profile-container {
+      flex-direction: column;
+    }
+  
+    .nav-bar {
+      position: relative;
+      width: 100%;
+      height: auto;
+      padding-top: 15px;
+    }
+  
+    .main-content {
+      margin-left: 0;
+    }
+  
+    .details-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .picture-grid {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+  }

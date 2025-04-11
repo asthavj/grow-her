@@ -1,0 +1,133 @@
+/* Root container for Forum page */
+.forum-page {
+    display: flex;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    background-color: #E0F7FA;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  
+  /* Navigation Bar */
+  .nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100vh;
+    background-color: #00ACC1;
+    color: white;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .nav-bar:hover {
+    overflow-y: auto;
+  }
+  
+  .logo h2 {
+    margin: 0;
+    font-size: 28px;
+    color: white;
+    padding-bottom: 20px;
+  }
+  
+  .nav-bar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  
+  .nav-bar ul li {
+    padding: 15px;
+    text-align: left;
+    width: 100%;
+  }
+  
+  .nav-bar ul li a {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 12px;
+    transition: background-color 0.3s ease, border-left 0.3s ease;
+  }
+  
+  .nav-bar ul li a:hover {
+    background-color: #80DEEA;
+    border-left: 3px solid #80DEEA;
+  }
+  
+  /* Forum Container */
+  .forum-container {
+    margin-left: 300px;
+    padding: 40px 30px;
+    max-width: 900px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .forum-container h1 {
+    font-size: 32px;
+    color: #00ACC1;
+    margin-bottom: 30px;
+  }
+  
+  /* Categories Section */
+  .categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 25px;
+  }
+  
+  .category {
+    background-color: #E0F7FA;
+    padding: 12px 25px;
+    font-size: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .category:hover {
+    background-color: #80DEEA;
+    transform: scale(1.08);
+  }
+  
+  .category.active {
+    background-color: #80DEEA;
+    font-weight: bold;
+  }
+  
+  /* Threads Section */
+  .threads {
+    background-color: #FFFFFF;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .thread {
+    margin-bottom: 25px;
+    padding: 15px;
+    border-bottom: 2px solid #E0F7FA;
+  }
+  
+  .thread h3 {
+    font-size: 22px;
+    margin: 0;
+    color: #00ACC1;
+  }
+  
+  .thread p {
+    font-size: 18px;
+    margin: 8px 0;
+    color: #333333;
+  }
+  

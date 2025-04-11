@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .login-page {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* Body Styling */
+  body {
+    font-family: 'Arial', sans-serif;
+    /*background-image: url("C:\Users\Astha\OneDrive\Desktop\my PHOTO.jpg");  Update path as needed */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1F2544; /* Dark blue for text */
+  }
+  
+  /* Container Styling */
+  .container {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  /* Title Styling */
+  h1 {
+    font-size: 2rem;
+    color: #00ACC1; /* Dark purple for the title */
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Subtitle Styling */
+  .subtitle {
+    font-size: 0.9rem;
+    color: black; /* Light purple for subtitle */
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Form Styling */
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+  
+  label {
+    font-size: 0.9rem;
+    color: #00ACC1; /* Dark purple for labels */
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #E0F7FA; /* Light purple border */
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #504c0e; /* Dark blue for text */
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: border-color 0.3s ease;
+  }
+  
+  input[type="text"]:focus,
+  input[type="password"]:focus {
+    border-color: #011105; /* Dark purple on focus */
+    outline: none;
+  }
+  
+  /* Remember Me Checkbox */
+  .remember-me {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .remember-me input {
+    margin-right: 0.5rem;
+  }
+  
+  .remember-me label {
+    margin: 0;
+    color: #00ACC1; /* Dark purple for label */
+  }
+  
+  /* Login Button */
+  .btn-login {
+    background-color: #00ACC1; /* Dark purple */
+    color: white;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .btn-login:hover {
+    background-color: #80DEEA; /* Darker blue */
+    transform: translateY(-2px);
+  }
+  
+  .btn-login:active {
+    transform: translateY(0);
+  }
+  
+  /* Sign Up Link */
+  .signup-link {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: black; /* Light purple */
+  }
+  
+  .signup-link a {
+    color: #00ACC1; /* Dark purple */
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .signup-link a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 480px) {
+    .container {
+      padding: 1.5rem;
+    }
+  
+    h1 {
+      font-size: 1.75rem;
+    }
+  
+    .subtitle {
+      font-size: 0.8rem;
+    }
+  
+    input[type="text"],
+    input[type="password"] {
+      padding: 0.6rem;
+      font-size: 0.9rem;
+    }
+  
+    .btn-login {
+      padding: 0.6rem;
+      font-size: 0.9rem;
+    }
+  }

@@ -1,0 +1,212 @@
+/* 
+body {
+    font-family: Arial, sans-serif;
+    background-color: #E0F7FA;
+    color: #9C89B8;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: auto;
+  }
+
+  form#business-form {
+    width: 100%;
+  }
+  
+  .signup-container {
+    position: relative;
+    z-index:1;
+    background-color: #FFFFFF;
+    padding: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(113, 137, 73, 0.1);
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #00AAC1;
+    margin-bottom: 1.5rem;
+  }
+  
+  fieldset {
+    border: 1px solid #80DEEA;
+    border-radius: 5px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  legend {
+    font-weight: bold;
+    color: #00AAC1;
+    padding: 0 0.5rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #00AAC1;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="password"],
+  input[type="url"],
+  select,
+  textarea,
+  input[type="file"] {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #80DEEA;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #00AAC1;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 0.5rem;
+  }
+  
+  .checkbox-group {
+    display: flex;
+    align-items: center;
+  }
+  
+  button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #00AAC1;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 0.5rem;
+  }
+  
+  button:hover {
+    background-color: #80DEEA;
+  }
+  
+  .login-button {
+    background-color: #9C89B8;
+  }
+  
+  .login-button:hover {
+    background-color: #B8B8D1;
+  }
+  
+  .error {
+    color: #FF6B6B;
+    font-size: 0.8rem;
+    margin-top: 0.25rem;
+    display: block;
+  } */
+
+  /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #E0F7FA; /* Very Light Pink */
+    color: #9C89B8; /* Soft Purple */
+    margin: 0;
+    padding: 20px; /* Added padding to the body */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensure the body takes at least the full viewport height */
+  }
+  .main-content {
+    min-height: 300vh;
+  }
+  
+  .signup-container {
+    background-color: #FFFFFF;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(113, 137, 73, 0.1);
+    width: 100%;
+    max-width: 600px; /* Wider form */
+    min-height:200vh;
+
+  }
+  
+  h1 {
+    text-align: center;
+    color: #00AAC1; /* Soft Purple */
+    margin-bottom: 1.5rem;
+  }
+  
+  fieldset {
+    border: 1px solid #80DEEA; /* Light Blue */
+    border-radius: 5px;
+    padding: 1.5rem; /* Increased padding inside fieldset */
+    margin-bottom: 1.5rem;
+  }
+  
+  legend {
+    font-weight: bold;
+    color: #00AAC1; /* Soft Purple */
+    padding: 0 0.5rem; /* Added padding to legend */
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #00AAC1; /* Soft Purple */
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="password"],
+  input[type="url"],
+  select,
+  textarea,
+  input[type="file"] {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #80DEEA; /* Light Blue */
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #00AAC1; /* Soft Purple */
+  }
+  
+  textarea {
+    resize: vertical; /* Allow vertical resizing of textarea */
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 0.5rem;
+  }
+  
+  button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #00AAC1; /* Soft Purple */
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #80DEEA; /* Light Blue */
+  }
